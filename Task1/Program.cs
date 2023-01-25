@@ -19,7 +19,7 @@ void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.WriteLine($"{array[i]}");
+        Console.Write($"{array[i]}, ");
     }
     Console.WriteLine();
 }
@@ -55,4 +55,4 @@ PrintArray(arr);
 int positiveSum = GetPositiveSum(arr);
 int negativeSum = GetNegativeSum(arr);
 
-Console.WriteLine($"Сумма положительных элементов: {positiveSum}, Сумма отрицательных элементов: {negativeSum}.");
+Console.Write($"Сумма положительных элементов: {positiveSum}, Сумма отрицательных элементов: {negativeSum}.");

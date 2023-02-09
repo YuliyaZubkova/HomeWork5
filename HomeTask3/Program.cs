@@ -1,13 +1,14 @@
 ﻿/* Задайте массив вещественных чисел. 
 Найдите разницу между максимальным и минимальным элементов массива.
 
-[3 7 22 2 78] -> 76*/
+[3 7 22 2 78] -> 76
+*/
 
-double [] InitArray(int length)
+double [] InitArray(int dimension)
 {
-    double[] array = new double [length];
+    double[] array = new double [dimension];
     Random rnd = new Random();
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < dimension; i++)
     {
         array[i] = rnd.Next(1,100);
     }

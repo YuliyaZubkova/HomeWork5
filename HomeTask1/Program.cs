@@ -5,11 +5,11 @@
 */
 
 
-int[] InitArray(int length)
+int[] InitArray(int dimension)
 {
-    int[] array = new int[length];
+    int[] array = new int[dimension];
     Random rnd = new Random();
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < dimension; i++)
     {
         array[i] = rnd.Next(100, 1000);
     }
@@ -26,7 +26,7 @@ int PrintArray(int[] array)
         Console.Write($"{array[i]}, ");
     }
     Console.WriteLine();
-    Console.WriteLine($"Количество четных чисел в массиве: {sum} ");
+    Console.WriteLine($"Количество четных чисел в массиве равно {sum} ");
     return sum;
 }
 

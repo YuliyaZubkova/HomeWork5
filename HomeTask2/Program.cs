@@ -6,11 +6,11 @@
 [-4, -6, 89, 6] -> 0
 */
 
-int[] InitArray(int length)
+int[] InitArray(int dimension)
 {
-    int[] array = new int [length];
+    int[] array = new int [dimension];
     Random rnd = new Random();
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < dimension; i++)
     {
         array[i] = rnd.Next(-9,10);
     }
@@ -34,7 +34,7 @@ int GetPositiveSum(int[] arr)
     {
             summ = summ + arr[i];
     }
-    Console.WriteLine($"Сумма элементов нечетных позиций равна {summ}");
+    Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях, равна {summ}");
     return summ;
 }
 
